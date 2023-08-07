@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%; 
+     height: 100vh;
+ /* background: url(./pexels-cottonbro-studio-4626350.jpg); */
+    background-image: linear-gradient(rgba(0,0,50,0.8), rgba(0,0,50,0.8)), url('./pexels-cottonbro-studio-4626350.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+
+/* media query for responsiveness in small devices */
+@media only screen and (min-width : 300px) and (max-width : 500px) {
+    .form-box{
+        width: 90%;
+        max-width: 250px;
+        height: 500px;
+        padding: 5%;
+    }
+}
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: rgb(67, 67, 121);
+    position: relative;
+}
+
+.form-box h1::after{
+    content: '';
+width: 30px;
+height: 4px;
+border-radius: 3px;
+background-color: rgb(67, 67, 121);
+position: absolute;
+bottom: -12px;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.input-field{
+    background-color:rgb(236, 233, 233);
+        margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 18px 15px;
+}
+.input-field i{
+ margin-left: 15px;
+ color: #9999;   
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a{
+   text-decoration: none;
+   color: rgb(67, 67, 121); 
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button{
+    flex-basis: 48%;
+    background-color: rgb(67, 67, 121);
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+}
+.input-form{
+    height: 280px;
+}
+.btn-field button.disable{
+    background-color: rgb(236, 233, 233);
+    color: #555;
+
+}
+
